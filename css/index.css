@@ -169,17 +169,33 @@ img {
   margin: 0 auto;
 }
 header .nav-container {
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .nav-items {
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
 }
-header .nav-container nav {
-  width: 30%;
+header .nav-items nav {
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+}
+header .nav-items nav a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.5rem;
+}
+header section {
+  margin-bottom: 20px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header section img {
+  margin-bottom: 20px;
 }
 .footer {
   width: 100%;
@@ -237,4 +253,14 @@ header .nav-container nav {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination button {
+  width: 90%;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
