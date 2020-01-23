@@ -1,1 +1,35 @@
 // Navigation Styles here
+header{
+    .nav-container{
+        border-bottom: 2px dashed @navigation-border;
+    }
+    .nav-items{
+        padding: 20px 0;
+        .center();
+        justify-content: space-between;
+        nav{
+            width: 40%;
+            .center();
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                color: @shark;
+                font-size: 1.5rem;
+            }
+            @media @phone{
+                width: 60%;
+                margin-top: 10px;
+            }
+        }
+        @media @phone{
+            flex-direction: column;
+        }
+    }
+    section{
+        margin-bottom: 20px;
+        border-bottom: 2px dashed @navigation-border;
+        img{
+            margin-bottom: 20px;
+        }
+    }
+}

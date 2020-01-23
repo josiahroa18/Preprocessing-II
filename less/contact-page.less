@@ -1,0 +1,38 @@
+section{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    form{
+        .center();
+        flex-direction: column;
+        label, input, select, textarea, button{
+            margin: 5px 0;
+        }
+        label{
+            color: @shark;
+            font-size: 1.5rem;
+        }
+        input{
+            .form-sizing(30px, 50%);
+            @media @phone{
+                .form-sizing(30px, 80%);
+            }
+        }
+        select{
+            .form-sizing(30px, 50%);
+            background-color: @white;
+            @media @phone{
+                .form-sizing(30px, 80%);
+            }
+        }
+        textarea{
+            width: 50%;
+            @media @phone{
+                width: 80%;
+            }
+        }
+        button{
+            .button-design(@eastern-blue, black, 30%);
+        }
+    }
+    
+}
