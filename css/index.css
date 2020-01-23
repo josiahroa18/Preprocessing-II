@@ -318,3 +318,63 @@ header section img {
     flex-direction: column;
   }
 }
+section {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section form label,
+section form input,
+section form select,
+section form textarea,
+section form button {
+  margin: 5px 0;
+}
+section form label {
+  color: #212529;
+  font-size: 1.5rem;
+}
+section form input {
+  height: 30px;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  section form input {
+    height: 30px;
+    width: 80%;
+  }
+}
+section form select {
+  height: 30px;
+  width: 50%;
+  background-color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  section form select {
+    height: 30px;
+    width: 80%;
+  }
+}
+section form textarea {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  section form textarea {
+    width: 80%;
+  }
+}
+section form button {
+  width: 30%;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #17A2B8;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
