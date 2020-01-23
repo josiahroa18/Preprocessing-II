@@ -6,11 +6,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone{
+        width: 100%;
+      }
     }
 
     .img-content {
@@ -20,6 +21,15 @@
       img {
         border-radius: 10px;
       }
+      @media @phone{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    @media @phone{
+      flex-direction: column;
     }
   }
 
@@ -36,6 +46,9 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @phone{
+      flex-direction: column-reverse;
+    }
   }
 
   .content-destination {
@@ -44,6 +57,9 @@
 
     img {
       border-radius: 10px;
+    }
+    @media @phone{
+      width: 100%;
     }
   }
 
@@ -60,6 +76,12 @@
       button{
         .button-design(@eastern-blue, @white);
       }
+      @media @phone{
+        width: 100%;
+      }
+    }
+    @media @phone{
+      flex-direction: column;
     }
   }
 }// home
